@@ -1,0 +1,61 @@
+[
+  {
+    "position": "Software Engineer",
+    "company": "CI&T",
+    "location": "Tokyo, Japan",
+    "date": "January 2020 - July 2023",
+    "description": [
+      "Involved with architecture design from gathering business requirements, writing technical specifications and documentation, POCs, implementation, testing, and deployment",
+      "Designed and implemented a scheduled data file parser application, which retrieved CSV data from a WebDav service; which used Node streams, AWS Lambda, and AWS SQS to insert data into a single-table designed DynamoDB table",
+      "Designed, created, and maintained APIs in Typescript on AWS Lambda Serverless and Microservices technologies using Lambda, API Gateway, DynamoDB, PostgreSQL, SQS, and Google Apigee",
+      "Implemented a Social Media authentication feature to an existing React website concentrating mostly on backend APIs and some React code updates",
+      "Refactored a loyalty points transaction system from different legacy systems to a monorepo/microservices application",
+      "Also worked on some DevOps and CI/CD with AWS, Terraform, Jenkins"
+    ]
+  },
+  {
+    "position": "Instructor",
+    "company": "Le Wagon",
+    "location": "Kyoto, Japan",
+    "date": "June 2019",
+    "description": [
+      "Taught intro Ruby on Rails",
+      "Lectured and presented live code",
+      "Assisted and tutored students with their projects"
+    ]
+  },
+  {
+    "position": "LAMP Developer",
+    "company": "The Design People, Inc.",
+    "location": "El Segundo, California",
+    "date": "November 2012 - December 2018",
+    "description": [
+      "Developed and maintained WordPress plugins and internal tools",
+      "Created various scripts (Python, Bash, PHP) for our web servers hosting mostly WordPress sites",
+      "Managed multiple servers and cloud instances which hosts 5,000+ websites at Rackspace, AWS, and our own server cabinet utilizing Nginx/Apache and Nginx/PHP-FPM web servers"
+    ]
+  },
+  {
+    "position": "Web Developer",
+    "company": "The Design People, Inc.",
+    "location": "Marina del Rey, California",
+    "date": "November 2008 - November 2012",
+    "description": [
+      "Managed custom modules for our enterprise CMS application which hosts roughly 2,500+ websites",
+      "Coordinated with several developers to expand, customize, and maintain client's websites",
+      "Developed customized modules for MLS/IDX data feeds, which used RETS, XML, and CSV",
+      "Created the first set of plugins for our current WordPress product line"
+    ]
+  },
+  {
+    "position": "System Administrator",
+    "company": "The Design People, Inc.",
+    "location": "Marina del Rey, California",
+    "date": "February 2006 - August 2008",
+    "description": [
+      "Managed web, mail, dns, and backup servers",
+      "Provided tier III and tier II support, training for tier I, as well as emergency development work for our websites",
+      "Developed various tools in Bash (backup scripts, website creation scripts), websites in PHP (email server management, DNS management), and Salesforce.com's PHP API for our project management and production teams"
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Work Project",
+    "description": "A loyalty rewards program that used AWS serverless services including Lambda, API Gateway, DynamoDB, and SQS. Some features include a product data parser, abuse prevention system, and an account deletion system which preserved account data but removed personal information. Refactored a monolithic infrastructure to microservices.",
+    "skills": [
+      "typescript",
+      "jest",
+      "s3",
+      "lambda",
+      "apiGateway",
+      "dynamodb",
+      "postgresql",
+      "terraform",
+      "jenkins"
+    ]
+  },
+  {
+    "name": "Data File Parser",
+    "description": "A file parser application which uses a cron job to retrieve CSV data from a WebDav service to insert into a single-table designed DynamoDB table. It uses Node streams to mitigate the large data sets and AWS SQS to queue data into DynamoDB.",
+    "skills": [
+      "typescript",
+      "jest",
+      "expressJs",
+      "s3",
+      "lambda",
+      "dynamodb",
+      "awsSqs",
+      "terraform",
+      "jenkins"
+    ]
+  },
+  {
+    "name": "Internal Website",
+    "description": "Worked on a team to develop a couple of internal tools using Vue/Nuxt, Express, and AWS Lambda.",
+    "skills": ["vue", "nuxt", "expressJs", "jest", "lambda"]
+  },
+  {
+    "name": "Drupal Elasticsearch Module",
+    "description": "A Custom Drupal module that uses elasticsearch to index a large internal social networking site.",
+    "skills": ["drupal", "elasticsearch"]
+  },
+  {
+    "name": "Ginge",
+    "description": "A personal project which is a simple PHP template engine with nested if statements, and for loops. Can add custom functions and utilized a simple cache.",
+    "repo": "christopher-alabada/Ginge",
+    "skills": ["php"]
+  },
+  {
+    "name": "Portfolio",
+    "description": "This portfolio site. Built with NextJS, hosted on Vercel, and uses Github Actions.",
+    "repo": "christopher-alabada/portfolio",
+    "skills": ["typescript", "nextjs", "github", "vercel", "s3"]
+  },
+  {
+    "name": "Portfolio Backend",
+    "description": "This portfolio's backend API. Built with Python, FastAPI, AWS Gateway, AWS Lambda, and uses Terraform.",
+    "repo": "christopher-alabada/portfolio-backend",
+    "skills": ["python", "fastapi", "terraform", "s3", "apiGateway", "lambda"]
+  }
+]

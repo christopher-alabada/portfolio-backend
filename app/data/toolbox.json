@@ -1,0 +1,38 @@
+{
+  "languages": [
+    { "image": "typescript.png", "name": "Typescript" },
+    { "image": "javascript.png", "name": "JavaScript" },
+    { "image": "python.png", "name": "Python" },
+    { "image": "php.png", "name": "PHP" },
+    { "image": "ruby.png", "name": "Ruby" },
+    { "image": "bash.png", "name": "Bash Scripting" }
+  ],
+  "frameworks": [
+    { "image": "nodejs.svg", "name": "Node.js" },
+    { "image": "nodejs.svg", "name": "Express" },
+    { "image": "react.png", "name": "React" },
+    { "image": "nextjs.png", "name": "Next.js" },
+    { "image": "vue.png", "name": "Vue" },
+    { "image": "rails.png", "name": "Rails" },
+    { "image": "fastapi.svg", "name": "FastAPI" },
+    { "image": "jest.png", "name": "Jest" },
+    { "image": "cypress.png", "name": "Cypress" }
+  ],
+  "databases": [
+    { "image": "dynamodb.png", "name": "DynamoDB" },
+    { "image": "mysql.png", "name": "MySQL" },
+    { "image": "postgresql.png", "name": "PostgreSQL" },
+    { "image": "elasticsearch.png", "name": "Elasticsearch" },
+    { "image": "mongodb.png", "name": "MongoDB" },
+    { "image": "redis.png", "name": "Redis" }
+  ],
+  "miscellaneous": [
+    { "image": "lambda.png", "name": "Lambda" },
+    { "image": "aws_api_gateway.png", "name": "API Gateway" },
+    { "image": "sqs.png", "name": "SQS" },
+    { "image": "terraform.png", "name": "Terraform" },
+    { "image": "vercel.svg", "name": "Vercel" },
+    { "image": "jenkins.png", "name": "Jenkins" },
+    { "image": "github.png", "name": "GitHub Actions" }
+  ]
+}

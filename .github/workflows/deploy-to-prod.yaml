@@ -1,0 +1,24 @@
+name: Prod Deploy
+
+on:
+  pull_request:
+    branches: [prod]
+    types: [closed]
+
+jobs:
+  prod-deployment:
+    name: Production Deployment
+    uses: ./.github/workflows/deploy-app.yaml
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_PROD }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_PROD }}
+    with:
+      environment: "prod"
+      apply: true
+      aws-region: ${{ vars.AWS_REGION }}
+      aws-bucket: ${{ vars.AWS_BUCKET }}
+      site_domain: ${{ vars.DOMAIN_NAME }}
+      s3_deploy_zipfile: ${{ vars.S3_DEPLOY_ZIPFILE }}
+      aws_role: ${{ vars.AWS_ROLE }}
+      aws_role_apigateway: ${{ vars.AWS_ROLE_APIGATEWAY }}
+      aws_certificate_arn: ${{ vars.AWS_CERTIFICATE_ARN }}

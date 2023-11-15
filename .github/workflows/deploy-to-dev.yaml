@@ -1,0 +1,43 @@
+name: Deploy To Dev
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]
+
+jobs:
+  merge-main-to-dev:
+    name: Merge main to dev
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set Git config
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+      - name: Merge main to dev
+        run: |
+          git fetch --unshallow
+          git checkout dev
+          git pull
+          git merge --no-ff main -m "Auto-merge main to dev"
+          git push
+
+  dev-deployment:
+    name: Dev Deployment
+    uses: ./.github/workflows/deploy-app.yaml
+    needs: merge-main-to-dev
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
+    with:
+      environment: "dev"
+      apply: true
+      aws-region: ${{ vars.AWS_REGION }}
+      aws-bucket: ${{ vars.AWS_BUCKET }}
+      site_domain: "dev-${{ vars.DOMAIN_NAME }}"
+      s3_deploy_zipfile: ${{ vars.S3_DEPLOY_ZIPFILE }}
+      aws_role: ${{ vars.AWS_ROLE }}
+      aws_role_apigateway: ${{ vars.AWS_ROLE_APIGATEWAY }}
+      aws_certificate_arn: ${{ vars.AWS_CERTIFICATE_ARN }}

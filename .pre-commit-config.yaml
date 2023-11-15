@@ -1,0 +1,40 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        stages: [commit, push]
+      - id: end-of-file-fixer
+        stages: [commit, push]
+      - id: check-ast
+        stages: [commit, push]
+      - id: check-yaml
+        stages: [commit, push]
+      - id: check-json
+        stages: [commit, push]
+      - id: check-merge-conflict
+        stages: [commit, push]
+      - id: check-added-large-files
+        stages: [commit, push]
+      - id: detect-private-key
+        stages: [commit, push]
+      - id: check-case-conflict
+        stages: [commit, push]
+      - id: requirements-txt-fixer
+        stages: [commit, push]
+      - id: fix-byte-order-marker
+        stages: [commit, push]
+      - id: mixed-line-ending
+        stages: [commit, push]
+      - id: end-of-file-fixer
+        stages: [commit, push]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.0.287
+    hooks:
+      - id: ruff
+        stages: [commit, push]
+  - repo: https://github.com/psf/black
+    rev: 23.7.0
+    hooks:
+      - id: black
+        stages: [commit, push]
